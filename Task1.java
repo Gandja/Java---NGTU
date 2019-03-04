@@ -2,12 +2,12 @@ public class Task1{
 
 
     public static void main(String[] args){
-        float a = 42;
-        float b = 46;
+        int a = 42;
+        int b = 46;
         checkNumber(a,b);
     }
-    public static int checkNumber(float a, float b){
-        float c = a / b;
+    public static int checkNumber(int a, int b){
+        float c = (float)a / b;
         if(a < 0 || b < 0) {
             System.out.println("Есть отрицательное число");
         }
