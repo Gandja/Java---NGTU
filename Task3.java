@@ -1,10 +1,10 @@
 public class Task3 {
     public static void main(String[] args) {
-        int[] arr = new int[]{100500, 6, 9, 100500, 34, 23, 90, 100500, -30, 50};
+        int[] arr = new int[]{100500, 100500, 100500, 100500, 100500, 100500, 100500, 100500, 100500, 100500};
         int max = arr[0];
         int count = 0;
         int j = 0;
-        while(true){
+        while(j < arr.length){
             if(arr[j] == 100500){
                 j++;
                 continue;
@@ -14,15 +14,7 @@ public class Task3 {
                 break;
             }
         }
-        for (int i = j; i < arr.length; i++) {
-
-            if(max < arr[i]) {
-                if (arr[i] == 100500) {
-                    continue;
-                }
-                max = arr[i];
-            }
-        }
+        for (int i = j; i < arr.length; i++)
         System.out.println("Максимальное число" + " " + max);
     }
 }
